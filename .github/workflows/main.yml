@@ -1,0 +1,14 @@
+  name: frist_workflow
+  
+  on:
+    push: 
+      branches:
+        - main
+  jobs:
+    exanple_job:
+      runs-on: ubunto-latest
+
+
+      steps:
+        - name: print a welcome massage
+          run: echo "welcome "
