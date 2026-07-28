@@ -10,11 +10,11 @@
 
 
       steps:
-        - name: print a welcome massage
+        - name: print a welcome message
           run: echo "welcome "
 
         - name: checkout repo 
-          uses: action/checkout@v4.2.2
+          uses: actions/checkout@v4.2.2
 
 
         - name: list repo files 
