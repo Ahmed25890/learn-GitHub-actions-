@@ -12,3 +12,10 @@
       steps:
         - name: print a welcome massage
           run: echo "welcome "
+
+      - name: checkout repo 
+        uses: action/checkout@v4.2.2
+
+
+      - name: list repo files 
+        run: ls -la 
