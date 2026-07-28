@@ -6,16 +6,16 @@
         - main
   jobs:
     exanple_job:
-      runs-on: ubunto-latest
+      runs-on: ubuntu-latest
 
 
       steps:
         - name: print a welcome massage
           run: echo "welcome "
 
-      - name: checkout repo 
-        uses: action/checkout@v4.2.2
+        - name: checkout repo 
+          uses: action/checkout@v4.2.2
 
 
-      - name: list repo files 
-        run: ls -la 
+        - name: list repo files 
+          run: ls -la 
