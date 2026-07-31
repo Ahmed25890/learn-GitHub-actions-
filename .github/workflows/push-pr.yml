@@ -20,5 +20,7 @@
           uses: actions/checkout@v4.2.2
 
         - name: run tests
+          runs: npm install 
           run: npm test
+          
         
