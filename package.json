@@ -1,0 +1,13 @@
+{
+  "name": "learn-github-actions",
+  "version": "1.0.0",
+  "description": "Simple JS app to learn GitHub Actions",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "bash src/test.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
