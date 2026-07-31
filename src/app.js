@@ -4,6 +4,6 @@ function name(i_name) {
 
 module.exports = name;
 
-if (require.main === module) {
-  console.log(name("world"));
-}
+// if (require.main === module) {
+//   console.log(name("world"));
+// }
