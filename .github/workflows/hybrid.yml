@@ -1,17 +1,36 @@
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   hybrid_job:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: run a cmd in ubuntu
+#         run: echo "Hello from ubuntu"
+#       - name: run inside a alpine container 
+#         uses: docker://alpine:3.18
+#         with:
+#           entrypoint: /bin/sh
+#           args: -c 'echo "Hello from alpine container"'
+
+name: Hybrid Job
+
 on:
   workflow_dispatch:
 
 jobs:
   hybrid_job:
     runs-on: ubuntu-latest
+
     steps:
-      - name: run a cmd in ubuntu
+      - name: Run a command in Ubuntu
         run: echo "Hello from ubuntu"
-      - name: run inside a alpine container 
+
+      - name: Run inside Alpine container
         uses: docker://alpine:3.18
         with:
           entrypoint: /bin/sh
-          args: -c 'echo "Hello from alpine container"'
+          args: -c "echo Hello from alpine container"
 
       - name: run a cmd in ubuntu 
         run: echo "Hello from ubuntu"
